@@ -1,0 +1,83 @@
+site_name: Groundstation Documentation
+site_description: Baseline documentation for the hybrid rocket groundstation
+site_url: https://example.com
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - content.code.copy
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist
+nav:
+  - Home: index.md
+  - Overview:
+      - overview/mission-context.md
+      - overview/system-goals.md
+      - overview/requirements.md
+      - overview/terminology.md
+  - Hardware:
+      - hardware/architecture.md
+      - hardware/compute.md
+      - hardware/power-system.md
+      - hardware/networking.md
+      - hardware/interfaces.md
+      - hardware/wiring.md
+      - hardware/bill-of-materials.md
+  - Physical UI:
+      - physical-ui/overview.md
+      - physical-ui/button-panel.md
+      - physical-ui/indicators.md
+      - physical-ui/dead-man-switch.md
+      - physical-ui/enclosure.md
+  - Software:
+      - software/architecture.md
+      - software/operating-system.md
+      - software/services.md
+      - software/telemetry-pipeline.md
+      - software/dashboard.md
+      - software/configuration.md
+      - software/update-strategy.md
+  - Safety:
+      - safety/safety-philosophy.md
+      - safety/hazard-analysis.md
+      - safety/interlocks.md
+      - safety/failure-modes.md
+      - safety/emergency-procedures.md
+      - safety/compliance.md
+  - Operation:
+      - operation/pre-operation-checklist.md
+      - operation/normal-operation.md
+      - operation/abort-procedures.md
+      - operation/shutdown.md
+      - operation/maintenance.md
+  - Testing:
+      - testing/test-strategy.md
+      - testing/hardware-tests.md
+      - testing/software-tests.md
+      - testing/acceptance-tests.md
+  - Development:
+      - development/repository-structure.md
+      - development/build-instructions.md
+      - development/local-dev.md
+      - development/ci-cd.md
+      - development/coding-standards.md
+  - Diagrams:
+      - diagrams/system-block-diagram.md
+      - diagrams/power-flow.md
+      - diagrams/safety-state-machine.md
+      - diagrams/network-topology.md
+  - Appendix:
+      - appendix/glossary.md
+      - appendix/references.md
+      - appendix/revision-history.md
+      - appendix/licenses.md
