@@ -3,6 +3,8 @@ site_description: Baseline documentation for the hybrid rocket groundstation
 site_url: https://example.com
 theme:
   name: material
+  logo: assets/images/gs-mark.png
+  favicon: assets/images/gs-mark.png
   features:
     - navigation.tabs
     - navigation.sections
@@ -10,6 +12,20 @@ theme:
     - toc.integrate
     - search.suggest
     - search.highlight
+    - header.autohide
+  palette:
+    - scheme: gs-dark
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: gs-light
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
 markdown_extensions:
   - admonition
   - toc:
@@ -18,6 +34,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tasklist
+extra_css:
+  - assets/styles/custom.css
 nav:
   - Home: index.md
   - Overview:
