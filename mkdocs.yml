@@ -1,6 +1,9 @@
 site_name: Groundstation Documentation
 site_description: Baseline documentation for the hybrid rocket groundstation
 site_url: https://example.com
+plugins:
+  - mermaid2
+  - search
 theme:
   name: material
   logo: assets/images/gs-mark.png
@@ -32,7 +35,12 @@ markdown_extensions:
       permalink: true
   - tables
   - pymdownx.details
-  - pymdownx.superfences
+  # Material theme + mermaid2 requires the custom fence to render <pre class="mermaid"><code>.
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:mermaid2.fence_mermaid_custom
   - pymdownx.tasklist
 extra_css:
   - assets/styles/custom.css
