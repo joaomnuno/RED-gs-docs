@@ -5,7 +5,7 @@ MkDocs-based documentation skeleton for the hybrid rocket groundstation. It foll
 ## Quick start
 ```bash
 pip install -r requirements.txt
-mkdocs serve
+mkdocs serve --livereload
 ```
 Open http://127.0.0.1:8000 to preview.
 
