@@ -1,6 +1,6 @@
 site_name: Groundstation Documentation
 site_description: Baseline documentation for the hybrid rocket groundstation
-site_url: https://example.com
+site_url: ""
 plugins:
   - mermaid2
   - search
